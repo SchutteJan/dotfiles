@@ -12,8 +12,11 @@ destination[2]="./powerline";
 origin[3]="/home/jan/.bashrc";
 destination[3]="./bashrc"
 
+origin[4]="/home/jan/.vimrc";
+destination[4]="./vimrc";
+
 echo "Copying all dotfiles...";
 
-for i in `seq 0 3`; do
+for i in `seq 0 4`; do
     cp -r ${origin[$i]} ${destination[$i]};
 done

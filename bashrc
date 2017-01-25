@@ -122,3 +122,5 @@ if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+alias vps='ssh jan@37.97.149.248'

@@ -94,8 +94,8 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $workspace1 "1:"
-set $workspace2 "2:$"
+set $workspace1 "1:◈"
+set $workspace2 "2:❱"
 set $workspace10 "10:♫"
 set $workspace9 "9:"
 
@@ -123,7 +123,7 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
-assign [class="Firefox"] $workspace1
+assign [class="Google-chrome"] $workspace1
 assign [class="Gnome-terminal"] $workspace2
 #assign [class="Spotif$"] $workspace10
 assign [class="Telegram"] $workspace9

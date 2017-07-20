@@ -161,15 +161,15 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
-bindsym F10 exec gnome-screenshot
+bindsym --release Shift+Print exec "scrncpy -s /tmp/"
 bindsym F9 exec lock -t ""
 exec nm-applet
-exec_always volumeicon
+exec volumeicon
 
 for_window [class="Display"] floating enable
 for_window [class="Tk"] floating enable
 for_window [class="Nautilus"] floating enable
+
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness

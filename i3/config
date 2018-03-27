@@ -161,10 +161,15 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+# Shift+printscr for draggable screenshot
 bindsym --release Shift+Print exec "scrncpy -s /tmp/"
-bindsym F9 exec lock -t ""
-exec nm-applet
-exec volumeicon
+
+# Lock screen on f9
+bindsym F9 exec lock -p -t ""
+
+# Execute network manager icon
+# exec nm-applet
 
 for_window [class="Display"] floating enable
 for_window [class="Tk"] floating enable
@@ -207,8 +212,8 @@ client.urgent $urgent-bg $urgent-bg $text-color $indicator
 
 # Gaps
 for_window [class="^.*"] border pixel 3
-gaps inner 10
-gaps outer 5
+gaps inner 7
+gaps outer 6
 new_window normal
 
 # Wallpaper
@@ -217,8 +222,15 @@ exec_always feh --bg-scale ~/Documents/wallpapers/grub.jpg
 # Dropshadow on windows
 exec_always --no-startup-id compton --config ~/.config/compton/compton.config -c
 
+# Volume controls and i3bar icon
+exec --no-startup-id /home/jan/runvol
 
+# Music controls
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
-
-
-
+# Move workspace to monitor
+bindsym $mod+Shift+greater move workspace to output right
+bindsym $mod+Shift+less move workspace to output left

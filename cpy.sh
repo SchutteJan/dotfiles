@@ -18,8 +18,11 @@ destination[4]="./vimrc";
 origin[5]="/usr/local/bin/scrncpy";
 destination[5]="./printscreencopy";
 
+origin[6]="/home/jan/.config/compton/compton.config";
+destination[6]="./compton.config";
+
 echo "Copying all dotfiles...";
 
-for i in `seq 0 5`; do
+for i in `seq 0 6`; do
     cp -r ${origin[$i]} ${destination[$i]};
 done

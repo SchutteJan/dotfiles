@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Takes a screenshot of window and saves it to the clipboard
-# Script not by me, found on the internet
+# Script not by my, found on the internet
 
 function help_and_exit {
     if [ -n "${1}" ]; then

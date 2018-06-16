@@ -234,3 +234,6 @@ bindsym XF86AudioPrev exec playerctl previous
 # Move workspace to monitor
 bindsym $mod+Shift+greater move workspace to output right
 bindsym $mod+Shift+less move workspace to output left
+
+# self documenting
+workspace_auto_back_and_forth yes

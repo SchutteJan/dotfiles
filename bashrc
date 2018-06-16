@@ -124,3 +124,4 @@ fi
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 alias vps='ssh jan@37.97.149.248'
+alias pipes='~/Documents/pipes.sh/pipes.sh -t 4'

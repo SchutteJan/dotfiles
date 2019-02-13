@@ -116,12 +116,15 @@ if ! shopt -oq posix; then
   fi
 fi
 
+alias vps='ssh jan@37.97.149.248'
+
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 # Powerline
 if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
     source /usr/share/powerline/bindings/bash/powerline.sh
 fi
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-alias vps='ssh jan@37.97.149.248'
-alias pipes='~/Documents/pipes.sh/pipes.sh -t 4'
+# bat (cat alternative)
+export BAT_PAGER="cat"

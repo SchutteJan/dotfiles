@@ -1,0 +1,11 @@
+--- default2.pa	2019-02-16 18:05:23.836498771 +0100
++++ default.pa	2019-02-16 18:05:41.088604349 +0100
+@@ -46,7 +46,7 @@
+ #load-module module-oss-mmap device="/dev/dsp" sink_name=output source_name=input
+ #load-module module-null-sink
+ #load-module module-pipe-sink
+-load-module module-alsa-sink device=hw:0,3
++
+ 
+ ### Automatically load driver modules depending on the hardware available
+ .ifexists module-udev-detect.so

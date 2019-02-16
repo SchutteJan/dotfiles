@@ -1,0 +1,21 @@
+{
+    "workbench.colorTheme": "Monokai Pro",
+    "workbench.iconTheme": "Monokai Pro Icons",
+    "window.menuBarVisibility": "toggle",
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": -1,
+    "workbench.colorCustomizations": {
+        "[Monokai Pro]": {
+             "editor.background": "#1d1f21",
+            "editor.foreground": "#c5c8c6",
+            "editorGutter.background": "#1d1f21",
+            "tab.activeBorder": "#a54242",
+            "tab.inactiveBackground": "#1d1f21",
+            "tab.activeBackground": "#1d1f21",
+            "editorGroupHeader.tabsBackground": "#1d1f21",
+            "sideBar.background": "#1d1f21"
+        }
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "window.titleBarStyle": "native"
+}

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Windows 10
+GenericName=Open Windows 10 VM
+Icon=display
+Exec=VBoxManage startvm Windows10
+Terminal=false
+Type=Application
+Categories=Settings;HardwareSettings;
+StartupNotify=true

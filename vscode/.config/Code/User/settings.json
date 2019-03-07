@@ -17,5 +17,12 @@
         }
     },
     "workbench.startupEditor": "newUntitledFile",
-    "window.titleBarStyle": "native"
+    "window.titleBarStyle": "native",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "java.errors.incompleteClasspath.severity": "ignore"
 }

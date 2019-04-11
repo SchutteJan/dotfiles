@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Godot Engine
+GenericName=Godot game engine
+Comment=Multi-platform 2D and 3D game engine with a feature-rich editor
+Terminal=false
+Type=Application
+MimeType=application/x-godot-project;
+Categories=Development;IDE;
+Exec=/home/jan/apps/godot/godot_v3.1

@@ -6,3 +6,6 @@ if [[ $MONITORS == "2" ]]; then
 elif [[ $MONITORS == "1" ]]; then
 	xrandr --auto
 fi
+
+
+i3-msg restart

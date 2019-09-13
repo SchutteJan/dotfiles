@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Matlab
+Comment=
+Exec=~/apps/MATLAB/R2019a/bin/matlab
+Icon=
+Terminal=False

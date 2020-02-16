@@ -226,9 +226,9 @@ exec_always feh --bg-fill --randomize ~/apps/wallpapers/laptop
 exec_always --no-startup-id compton --config ~/.config/compton/compton.config -c
 
 # Volume controls and i3bar icon
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec pulseaudio-ctl up 5
+bindsym XF86AudioLowerVolume exec pulseaudio-ctl down 5
+bindsym XF86AudioMute exec pulseaudio-ctl mute
 
 # Music controls
 bindsym XF86AudioPlay exec playerctl play-pause

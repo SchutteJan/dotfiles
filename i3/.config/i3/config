@@ -225,6 +225,9 @@ exec_always feh --bg-fill --randomize ~/apps/wallpapers/laptop
 # Dropshadow on windows
 exec_always --no-startup-id compton --config ~/.config/compton/compton.config -c
 
+# Powermanager, for battery notifications
+exec_always --no-startup-id xfce4-power-manager
+
 # Volume controls and i3bar icon
 bindsym XF86AudioRaiseVolume exec pulseaudio-ctl up 5
 bindsym XF86AudioLowerVolume exec pulseaudio-ctl down 5

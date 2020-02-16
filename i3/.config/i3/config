@@ -167,7 +167,7 @@ bindsym $mod+r mode "resize"
 bindsym --release Shift+Print exec "/home/jan/dotfiles/printscreencopy -s /tmp/"
 
 # Lock screen on f9
-bindsym F9 exec /home/jan/dotfiles/lock.sh
+bindsym F7 exec /home/jan/dotfiles/lock.sh
 
 # Execute network manager icon
 exec --no-startup-id nm-applet --sm-disable
@@ -236,8 +236,8 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Move workspace to monitor
-bindsym $mod+Shift+greater move workspace to output right
-bindsym $mod+Shift+less move workspace to output left
+bindsym $mod+Shift+greater move workspace to output up
+bindsym $mod+Shift+less move workspace to output down
 
 # self documenting
 workspace_auto_back_and_forth yes

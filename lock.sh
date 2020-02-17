@@ -1,5 +1,8 @@
 #!/bin/sh
 
+set -e
+xset s off dpms 0 10 0
+
 B='#00000000'  # blank
 C='#1d1f21aa'  # clear ish
 D='#a54242ff'  # default
@@ -11,15 +14,12 @@ H='#de935fff'  # highlight
 i3lock \
 --insidevercolor=$C   \
 --ringvercolor=$V     \
-\
 --insidewrongcolor=$C \
 --ringwrongcolor=$W   \
-\
 --insidecolor=$B      \
 --ringcolor=$D        \
 --linecolor=$B        \
 --separatorcolor=$D   \
-\
 --verifcolor=$T        \
 --wrongcolor=$T        \
 --timecolor=$T        \
@@ -30,6 +30,9 @@ i3lock \
 --image="/home/jan/apps/wallpapers/tokyo_blur.jpg" \
 --tiling \
 --screen 1            \
+--ignore-empty-password \
+--show-failed-attempts \
+--nofork
 # --blur 5              \
 # --indicator           \
 # --keylayout 2         \
@@ -39,4 +42,5 @@ i3lock \
 # --modsize=10
 # --timefont=comic-sans
 # --datefont=monofur
-# etc
+
+xset s off -dpms

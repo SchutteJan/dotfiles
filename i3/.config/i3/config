@@ -169,6 +169,9 @@ bindsym --release Shift+Print exec "/home/jan/dotfiles/printscreencopy -s /tmp/"
 # Lock screen on f9
 bindsym F7 exec /home/jan/dotfiles/lock.sh
 
+# Start lock on lid close daemon
+exec --no-startup-id xss-lock -- ~/dotfiles/lock.sh
+
 # Execute network manager icon
 exec --no-startup-id nm-applet --sm-disable
 

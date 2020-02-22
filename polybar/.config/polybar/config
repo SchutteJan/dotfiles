@@ -67,7 +67,7 @@ cursor-click = pointer
 cursor-scroll = ns-resize
 
 [bar/mybar2]
-monitor = ${env:MONITOR:DP-1}
+monitor = ${env:MONITOR:DP1}
 width = 100%
 height = 2%
 radius = 0.0

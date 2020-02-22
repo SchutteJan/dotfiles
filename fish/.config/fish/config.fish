@@ -13,7 +13,6 @@ alias ls "lsd"
 alias ll "lsd -la"
 
 # Add to path
-set PATH /home/jan/apps/node-v10.15.1-linux-x64/bin $PATH
 set PATH /home/jan/apps/flutter/bin $PATH
 set PATH /home/jan/apps/miniconda3/bin $PATH
 

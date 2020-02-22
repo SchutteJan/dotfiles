@@ -1,7 +1,5 @@
 #!/bin/sh
 
-set -e
-xset s off dpms 0 10 0
 
 B='#00000000'  # blank
 C='#1d1f21aa'  # clear ish
@@ -42,5 +40,3 @@ i3lock \
 # --modsize=10
 # --timefont=comic-sans
 # --datefont=monofur
-
-xset s off -dpms

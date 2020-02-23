@@ -30,7 +30,7 @@ font pango:monospace 12
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -126,9 +126,9 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 
 assign [class="Google-chrome"] $workspace1
 assign [class="x-terminal-emulator"] $workspace2
-#assign [class="Spotif$"] $workspace10
+assign [class="Spotify"] $workspace10
 assign [class="Telegram"] $workspace9
-for_window [class="Spotify"] move to workspace $workspace10
+#for_window [class="Spotify"] move to workspace $workspace10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

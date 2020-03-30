@@ -14,7 +14,7 @@ alias ll "lsd -la"
 
 # Add to path
 set PATH /home/jan/apps/flutter/bin $PATH
-set PATH /home/jan/apps/miniconda3/bin $PATH
+# set PATH /home/jan/apps/miniconda3/bin $PATH
 
 # Fuck command
 thefuck --alias | source
@@ -24,3 +24,4 @@ export VIRTUAL_ENV_DISABLE_PROMPT=true
 
 export EDITOR=vim
 
+export TERM=xterm-256color

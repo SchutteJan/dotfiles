@@ -226,7 +226,7 @@ new_window none
 exec_always feh --bg-fill --randomize ~/apps/wallpapers/laptop
 
 # Dropshadow on windows
-exec_always --no-startup-id compton --config ~/.config/compton/compton.config -c
+exec_always --no-startup-id picom --config ~/.config/compton/compton.config -c
 
 # Powermanager, for battery notifications
 exec_always --no-startup-id xfce4-power-manager

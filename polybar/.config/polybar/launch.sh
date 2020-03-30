@@ -6,11 +6,21 @@ killall -q polybar
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-MONITORS="$(xrandr -q | grep " connected" | wc -l)"
+# MONITORS="$(xrandr -q | grep " connected" | wc -l)"
 
-# Launch bar
-polybar mybar &
+eDP1="$(xrandr -q | grep "eDP1 connected"| wc -l)"
+HDMI1="$(xrandr -q | grep "HDMI1 connected"| wc -l)"
+DP1="$(xrandr -q | grep "DP1 connected"| wc -l)"
 
-if [[ $MONITORS == "2" ]]; then
-	polybar mybar2 &
+# Launch bars
+if [[ $eDP1 == "1" ]]; then
+    polybar mybar &
+fi
+
+if [[ $DP1 == "1" ]]; then
+    polybar mybar2 &
+fi
+
+if [[ $HDMI1 == "1" ]]; then
+    polybar mybar3 &
 fi

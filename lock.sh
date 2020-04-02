@@ -9,6 +9,13 @@ W='#1d1f21aa'  # wrong
 V='#a54242ff'  # verifying
 H='#de935fff'  # highlight
 
+# Resize image to screen dimensions
+dim=$(xdpyinfo | grep dimensions | cut -d\  -f7 | cut -dx -f1)
+
+if [[ ! -f ~/apps/wallpapers/lockscreen_$dim.png ]]; then
+    convert -resize $dim ~/apps/wallpapers/tokyo_blur.jpg ~/apps/wallpapers/lockscreen_$dim.png
+fi
+
 i3lock \
 --insidevercolor=$C   \
 --ringvercolor=$V     \
@@ -25,7 +32,7 @@ i3lock \
 --layoutcolor=$T      \
 --keyhlcolor=$H       \
 --bshlcolor=$W        \
---image="/home/jan/apps/wallpapers/tokyo_blur.jpg" \
+--image="/home/jan/apps/wallpapers/lockscreen_$dim.png" \
 --tiling \
 --screen 1            \
 --ignore-empty-password \
@@ -34,8 +41,8 @@ i3lock \
 # --blur 5              \
 # --indicator           \
 # --keylayout 2         \
-#--veriftext="..." \
-#--wrongtext="Nope!" \
+# --veriftext="..." \
+# --wrongtext="Nope!" \
 # --textsize=20
 # --modsize=10
 # --timefont=comic-sans

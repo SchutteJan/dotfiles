@@ -17,7 +17,7 @@ if [[ $eDP1 == "1" ]]; then
     polybar mybar &
 fi
 
-if [[ $DP1 == "1" ]]; then
+if [[ $DP1 == "2" ]]; then
     polybar mybar2 &
 fi
 

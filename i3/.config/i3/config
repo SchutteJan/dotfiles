@@ -180,6 +180,7 @@ for_window [class="Matplotlib"] floating enable
 for_window [class="Tk"] floating enable
 for_window [class="Nautilus"] floating enable
 for_window [class="Prototype"] floating enable
+for_window [class="Open3D"] floating enable
 
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness

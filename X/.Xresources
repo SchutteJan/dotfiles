@@ -1,4 +1,4 @@
-Xft.dpi: 170
+Xft.dpi: 168
 Xft.autohint: 0
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintfull
@@ -16,8 +16,11 @@ URxvt*scrollBar_right: false
 URxvt*background: #1d1f21
 URxvt*foreground: #c5c8c6
 URxvt*font: xft:UbuntuMono Nerd Font Mono:autohint=true
-URxvt*italicFont: xft:UbuntuMono Nerd Font Mono:autohint=true:italic
-URxvt*saveLines: 1000
+URxvt*italicFont: xft:UbuntuMono Nerd Font Mono:autohint=true:italic:minspace=False
+URxvt*saveLines: 10000
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    true
 
 URxvt.perl-ext-common: default,selection-to-clipboard,pasta,matcher,keyboard-select
 URxvt.keysym.M-u: perl:url-select:select_next
@@ -26,7 +29,7 @@ URxvt.underlineURLs: True
 URxvt.matcher.button: 1 
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.Control-Shift-V: perl:pasta:paste
-
+URxvt.letterSpace: -2
 
 ! Color theme: terminal.sexy -> collection/hybrid
 ! special

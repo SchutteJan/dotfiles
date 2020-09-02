@@ -56,7 +56,6 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
-modules-center = spotify
 # modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 modules-right = backlight-acpi pulseaudio wlan eth battery date powermenu
 
@@ -131,7 +130,6 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
-modules-center = spotify
 # modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 modules-right = backlight-acpi pulseaudio wlan eth battery date powermenu
 
@@ -487,10 +485,4 @@ margin-bottom = 5
 
 ; vim:ft=dosini
 
-[module/spotify]
-type = custom/script
-interval = 1
-format-prefix = "♫ "
-format = <label>
-exec = /usr/bin/python3 /home/jan/apps/polybar-spotify/spotify_status.py -f '{artist}: {song}'
-format-underline = #1db954
+

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Popcorn Time
+Comment=
+Exec=~/apps/popcorntime/Popcorn-Time
+Icon=
+Terminal=False

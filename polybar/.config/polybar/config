@@ -58,6 +58,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
 modules-right = backlight-acpi pulseaudio wlan eth battery date
+modules-center = player-mpris-tail openweathermap-fullfeatured
 
 tray-position = right
 tray-padding = 2
@@ -81,6 +82,18 @@ monitor = ${env:MONITOR:HDMI1}
 modules-left = bspwm i3
 modules-right = pulseaudio wlan eth battery date
 
+; https://github.com/polybar/polybar-scripts
+[module/player-mpris-tail]
+type = custom/script
+exec = ~/apps/polybar-scripts/polybar-scripts/player-mpris-tail/player-mpris-tail.py -f '{icon} {artist} - {title}' --icon-playing  --icon-paused 
+tail = true
+format-underline = ${colors.foreground-alt}
+
+[module/openweathermap-fullfeatured]
+type = custom/script
+exec = ~/apps/polybar-scripts/polybar-scripts/openweathermap-fullfeatured/openweathermap-fullfeatured.sh
+interval = 600
+format-underline = ${colors.foreground-alt}
 
 [module/xwindow]
 type = internal/xwindow
@@ -117,7 +130,7 @@ type = internal/bspwm
 
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.secondary}
+label-focused-underline= ${colors.foreground-alt}
 label-focused-padding = 2
 
 label-occupied = %index%

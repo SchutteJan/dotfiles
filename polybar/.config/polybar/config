@@ -22,8 +22,8 @@ background = #1d1f21
 background-alt = #1d1f21
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
-foreground-alt = #551
-primary = #00ffb52a
+foreground-alt = #a54242
+primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 
@@ -32,7 +32,7 @@ monitor = ${env:MONITOR:eDP1}
 width = 100%
 height = 2%
 radius = 0.0
-fixed-center = false
+fixed-center = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -51,13 +51,13 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=16;1
+;font-0 = fixed:pixelsize=16;1
+font-0 = Ubuntu Nerd Font:pixelsize=18;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
-# modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = backlight-acpi pulseaudio wlan eth battery date powermenu
+modules-right = backlight-acpi pulseaudio wlan eth battery date
 
 tray-position = right
 tray-padding = 2
@@ -79,10 +79,7 @@ inherit = bar/mybar
 monitor = ${env:MONITOR:HDMI1}
 
 modules-left = bspwm i3
-modules-right = backlight-acpi pulseaudio wlan eth battery date powermenu
-
-tray-position = right
-tray-padding = 2
+modules-right = pulseaudio wlan eth battery date
 
 
 [module/xwindow]
@@ -241,11 +238,11 @@ format-disconnected =
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
+ramp-signal-0 = " "
+ramp-signal-1 = " "
+ramp-signal-2 = " "
+ramp-signal-3 = " "
+ramp-signal-4 = " "
 ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
@@ -274,7 +271,7 @@ date-alt = " %Y-%m-%d"
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = 
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #a54242
 
@@ -284,10 +281,10 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume = " "
 label-volume-foreground = ${root.foreground}
 
-label-muted = 🔇 muted
+label-muted = " "
 label-muted-foreground = #666
 
 bar-volume-width = 10
@@ -347,24 +344,24 @@ format-charging-underline = #a54242
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = " "
+format-full-prefix = "   "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
+ramp-capacity-0 = " "
+ramp-capacity-1 = " "
+ramp-capacity-2 = " "
+amp-capacity-foreground = ${colors.foreground-alt}
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-2 = " "
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
+animation-discharging-0 = " "
+animation-discharging-1 = " "
+animation-discharging-2 = " "
 animation-discharging-foreground = ${colors.foreground-alt}
 animation-discharging-framerate = 750
 
@@ -382,10 +379,10 @@ label = %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${colors.foreground-alt}
+ramp-0 = 
+ramp-1 = 
+ramp-2  =
+amp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
 type = custom/menu
@@ -394,9 +391,9 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
+label-open = 
 label-open-foreground = ${colors.secondary}
-label-close =  cancel
+label-close =  cancel
 label-close-foreground = ${colors.secondary}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}

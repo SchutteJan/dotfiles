@@ -15,7 +15,7 @@
             "tab.activeBackground": "#1d1f21",
             "editorGroupHeader.tabsBackground": "#1d1f21",
             "sideBar.background": "#1d1f21",
-            "activityBar.activeBorder": "#e60053"
+            "activityBar.activeBorder": "#a54242"
         }
     },
     "workbench.startupEditor": "newUntitledFile",
@@ -35,5 +35,10 @@
     "matlab.matlabpath": "/home/jan/apps/MATLAB/R2019a/bin/matlab",
     "latex-workshop.message.update.show": false,
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'"
+    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "java.requirements.JDK11Warning": false,
+    "java.semanticHighlighting.enabled": false,
+    "python.languageServer": "Microsoft"
 }

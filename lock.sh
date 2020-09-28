@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 
 B='#00000000'  # blank

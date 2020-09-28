@@ -14,6 +14,11 @@ alias ls "lsd"
 alias ll "lsd -la"
 alias gs "git status"
 
+# View csv files
+function csview
+    cat $argv | sed -e 's/,,/, ,/g' | column -s, -t | less -#5 -N -S
+end
+
 # Add to path
 set PATH /home/jan/apps/flutter/bin $PATH
 set PATH /home/jan/go/bin $PATH

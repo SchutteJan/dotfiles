@@ -23,6 +23,7 @@ end
 set PATH /home/jan/apps/flutter/bin $PATH
 set PATH /home/jan/go/bin $PATH
 set PATH /home/jan/apps/miniconda3/bin $PATH
+set PATH /home/jan/.cargo/bin $PATH
 
 # Gurobi Optimizer
 set GUROBI_HOME /home/jan/apps/gurobi/gurobi902/linux64/
@@ -34,7 +35,7 @@ set GRB_LICENSE_FILE /home/jan/apps/gurobi/gurobi.lic
 thefuck --alias | source
 
 # Disable virtual env custom prompt
-# export VIRTUAL_ENV_DISABLE_PROMPT=true
+export VIRTUAL_ENV_DISABLE_PROMPT=true
 
 export EDITOR=vim
 

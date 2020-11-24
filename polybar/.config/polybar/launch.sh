@@ -8,9 +8,9 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # MONITORS="$(xrandr -q | grep " connected" | wc -l)"
 
-eDP1="$(xrandr -q | grep "eDP1 connected"| wc -l)"
-HDMI1="$(xrandr -q | grep "HDMI1 connected"| wc -l)"
-DP1="$(xrandr -q | grep "DP1 connected"| wc -l)"
+eDP1="$(xrandr -q | grep "eDP-1 connected"| wc -l)"
+HDMI1="$(xrandr -q | grep "HDMI-1 connected"| wc -l)"
+DP1="$(xrandr -q | grep "DP-1 connected"| wc -l)"
 
 # Launch bars
 if [[ $eDP1 == "1" ]]; then

@@ -1,7 +1,7 @@
 {
     "workbench.colorTheme": "Visual Studio Dark",
     "terminal.integrated.shell.linux": "/bin/bash",
-    "workbench.iconTheme": "Monokai Pro Icons",
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
     "window.menuBarVisibility": "toggle",
     "editor.minimap.enabled": false,
     "window.zoomLevel": -1,

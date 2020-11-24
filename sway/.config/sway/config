@@ -270,6 +270,8 @@ bindsym XF86MonBrightnessUp exec light -A 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 10 # decrease screen brightness-manager
 
 
-
+# Screenshot utility
+bindsym --release Shift+Print exec ~/dotfiles/grimshot.sh copy area
+bindsym --release Print exec ~/dotfiles/grimshot.sh copy output
 
 include /etc/sway/config.d/*

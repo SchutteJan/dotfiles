@@ -264,16 +264,26 @@ bindsym XF86AudioRaiseVolume exec pulseaudio-ctl up 5
 bindsym XF86AudioLowerVolume exec pulseaudio-ctl down 5
 bindsym XF86AudioMute exec pulseaudio-ctl mute
 
+# Music controls
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
 # Powermanager, for battery notifications
-exec_always --no-startup-id xfce4-power# Screen brightness controls
+exec_always xfce4-power-manager
 
 # Screen brightness
 bindsym XF86MonBrightnessUp exec light -A 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 10 # decrease screen brightness-manager
 
-
 # Screenshot utility
 bindsym --release Shift+Print exec ~/dotfiles/grimshot.sh copy area
 bindsym --release Print exec ~/dotfiles/grimshot.sh copy output
+
+# Lid close events
+set $laptop eDP-1
+bindswitch lid:on output $laptop disable
+bindswitch lid:off output $laptop enable
+
 
 include /etc/sway/config.d/*

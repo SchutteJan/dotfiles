@@ -1,7 +1,7 @@
 {
-    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.colorTheme": "Monokai Pro",
     "terminal.integrated.shell.linux": "/bin/bash",
-    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "workbench.iconTheme": "Monokai Pro Icons",
     "window.menuBarVisibility": "toggle",
     "editor.minimap.enabled": false,
     "window.zoomLevel": -1,
@@ -56,5 +56,8 @@
         "timestep",
         "timesteps",
         "youtube"
-    ]
+    ],
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
 }

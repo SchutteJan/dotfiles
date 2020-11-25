@@ -254,8 +254,10 @@ for_window [app_id="Alacritty"] opacity $opacity
 workspace_auto_back_and_forth yes
 
 # Move workspace to monitor
-bindsym $mod+Shift+greater move workspace to output up
-bindsym $mod+Shift+less move workspace to output down
+bindsym $mod+Control+Shift+Up move workspace to output up
+bindsym $mod+Control+Shift+Right move workspace to output right
+bindsym $mod+Control+Shift+Left move workspace to output left
+bindsym $mod+Control+Shift+Down move workspace to output down
 
 # Volume controls
 bindsym XF86AudioRaiseVolume exec pulseaudio-ctl up 5

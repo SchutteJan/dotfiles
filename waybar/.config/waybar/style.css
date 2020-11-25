@@ -132,6 +132,14 @@ label:focus {
     background-color: rgba(165, 66, 66, 0.8);
 }
 
+/* Hide backlight module on external outputs */
+window.HDMI-A-1 #backlight {
+    background-color: rgba(165, 66, 66, 0);
+    font-size: 0px;
+    padding: 0;
+    margin: 0;
+}
+
 #network {
     background-color: rgba(165, 66, 66, 0.8);
 }

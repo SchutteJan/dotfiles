@@ -5,12 +5,19 @@ indicator-radius=100
 inside-ver-color=1d1f21aa
 ring-ver-color=a54242ff
 inside-wrong-color=1d1f21aa
-ring-wrong-color=1d1f21aa
+ring-wrong-color=a54242ff
 inside-color=00000000
 ring-color=a54242ff
 line-color=00000000
+line-ver-color=00000000
+line-wrong-color=00000000
+line-clear-color=00000000
 separator-color=a54242ff
 text-color=ee00ee00
 key-hl-color=de935fff
 bs-hl-color=1d1f21aa
+text-ver-color=c5c8c6ff
+text-wrong-color=c5c8c6ff
+text-clear-color=c5c8c6ff
+
 

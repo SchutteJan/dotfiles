@@ -145,8 +145,8 @@ label:focus {
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+    background-color: rgba(100, 114, 125, 0.502);
+    color: #ffffff;
 }
 
 #custom-media {

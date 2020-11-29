@@ -19,12 +19,13 @@ set $term alacritty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 # set $menu  dmenu_path | dmenu | xargs swaymsg exec --
+# set $menu bemenu-run -l 10 -i -p "run" --tb "#1d1f21" --tf "#c5c8c6" --hb "#a54242" --hf "#c5c8c6"
 set $menu i3-dmenu-desktop
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/apps/wallpapers/laptop/lines.jpg fill
+output * bg ~/apps/wallpapers/aenami/timeless_UltraHD.png fill
 
 # Colors
 set $bg-color			#1d1f21
@@ -33,13 +34,14 @@ set $text-color			#F3F4F5
 set $inactive-text		#676E7D
 set $urgent-bg			#E53935
 set $indicator			#37474F
-set $highlight                  #bd2c40
+set $highlight                  #bd2c40ee
+set $child                      #64727d80
 
-#			border		bg		text		indicator
-client.focused		$bg-color	$bg-color	$text-color	$indicator
-client.unfocused	$inactive-bg	$inactive-bg	$inactive-text	$indicator
+#			border		bg		text		indicator  child
+client.focused		$highlight	$bg-color	$text-color	$indicator $highlight
+client.unfocused	$inactive-bg	$inactive-bg	$inactive-text	$indicator $child
 client.focused_inactive	$inactive-bg	$inactive-bg	$inactive-text	$indicator
-client.urgent $urgent-bg $urgent-bg $text-color $indicator
+client.urgent           $urgent-bg      $urgent-bg      $text-color     $indicator
 
 #
 # Example configuration:
@@ -241,11 +243,10 @@ bar {
 }
 
 # Gaps
-for_window [class="^.*"] border pixel 0
 gaps inner 4
 gaps outer 3
 smart_gaps off
-default_border none
+default_border pixel 4
 
 # Opacity
 set $opacity 0.9
@@ -293,5 +294,12 @@ exec_always {
     gsettings set $gnome-schema icon-theme 'Papirus-Dark'
     gsettings set $gnome-schema cursor-theme 'breeze_cursors'
 }
+
+# Dont lock if firefox is fullscreen
+for_window [app_id="firefox"] inhibit_idle fullscreen
+
+# Switch horizontal and vertical tiling automatically
+# https://github.com/nwg-piotr/autotiling
+exec autotiling
 
 include /etc/sway/config.d/*

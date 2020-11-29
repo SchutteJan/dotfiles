@@ -1,5 +1,5 @@
 options=('Laptop only' 'External + Laptop' 'External Only')
-dmenuCmd='dmenu -i -l 10 -sb "#a54242"'
+dmenuCmd='bemenu -l 10 -i -p "run" --tb "#1d1f21" --tf "#c5c8c6" --hb "#a54242" --hf "#c5c8c6"'
 
 
 optionStr=$(printf "\n%s" "${options[@]}")

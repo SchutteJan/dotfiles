@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=WDisplays
+GenericName=Wayland display configuration tool
+Icon=display
+Exec=wdisplays
+Terminal=false
+Type=Application
+Categories=Settings;HardwareSettings;
+StartupNotify=true

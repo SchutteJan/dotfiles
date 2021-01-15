@@ -60,6 +60,11 @@ window#waybar.chromium {
     background-color: #eb4d4b;
 }
 
+#workspaces button.visible {
+    background-color: #a54242;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
 #mode {
     background-color: #64727D;
     border-bottom: 3px solid #ffffff;

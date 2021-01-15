@@ -184,11 +184,11 @@ window.HDMI-A-1 #backlight {
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
+    background-color: rgba(100, 114, 125, 0.502);
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
+    background-color: rgba(236, 240, 241, 0.651);
     color: #2d3436;
 }
 

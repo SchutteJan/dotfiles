@@ -20,7 +20,7 @@ set $term alacritty
 # on the original workspace that the command was run on.
 # set $menu  dmenu_path | dmenu | xargs swaymsg exec --
 # set $menu bemenu-run -l 10 -i -p "run" --tb "#1d1f21" --tf "#c5c8c6" --hb "#a54242" --hf "#c5c8c6"
-set $menu i3-dmenu-desktop
+set $menu sway-bemenu-desktop
 
 ### Output configuration
 #

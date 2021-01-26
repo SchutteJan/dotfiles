@@ -26,3 +26,6 @@ if exists("+undofile")
   set undodir+=~/.vim/undo//
   set undofile
 endif
+
+vnoremap < <gv
+vnoremap > >gv

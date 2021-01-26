@@ -307,4 +307,7 @@ exec autotiling
 # Notification Deamon
 exec ~/apps/mako/build/mako
 
+# Swap Alt and Win keys
+input 1452:591:Keychron_K2_Keyboard xkb_options "altwin:swap_lalt_lwin"
+
 include /etc/sway/config.d/*

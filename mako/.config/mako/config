@@ -1,3 +1,4 @@
 background-color=#1d1f21
 text-color=#c5c8c6
 border-color=#a54242
+default-timeout=3000

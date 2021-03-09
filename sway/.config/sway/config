@@ -34,7 +34,7 @@ set $text-color			#F3F4F5
 set $inactive-text		#676E7D
 set $urgent-bg			#E53935
 set $indicator			#37474F
-set $highlight                  #bd2c40ee
+set $highlight                  #a54242
 set $child                      #64727d80
 
 #			border		bg		text		indicator  child
@@ -50,7 +50,7 @@ output HDMI-A-1 resolution 2560x1440 position 0,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
-output eDP-1 resolution 3200x1800 scale 2 position 482,1440
+output eDP-1 resolution 3200x1800 scale 2 position 2560,540
 
 ### Idle configuration
 #
@@ -271,7 +271,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Powermanager, for battery notifications
-exec_always xfce4-power-manager
+# exec_always xfce4-power-manager
 
 # Screen brightness
 bindsym XF86MonBrightnessUp exec light -A 10 # increase screen brightness
@@ -280,6 +280,12 @@ bindsym XF86MonBrightnessDown exec light -U 10 # decrease screen brightness-mana
 # Screenshot utility
 bindsym --release Shift+Print exec ~/dotfiles/grimshot.sh copy area
 bindsym --release Print exec ~/dotfiles/grimshot.sh copy output
+
+# Lock screen on mod+esc
+bindsym $mod+Escape exec 'swaylock -f'
+
+# Limit maximum size floating windows
+floating_maximum_size 3000 x 1600
 
 # Lid close events
 set $laptop eDP-1

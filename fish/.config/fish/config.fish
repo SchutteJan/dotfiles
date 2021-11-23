@@ -13,7 +13,6 @@ export BAT_PAGER="cat"
 alias ls "lsd"
 alias ll "lsd -la"
 alias gs "git status"
-alias bat "batcat"
 
 # View csv files
 function csview

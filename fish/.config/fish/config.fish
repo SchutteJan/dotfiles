@@ -1,6 +1,6 @@
 # Powerline
 function fish_prompt
-    eval ~/go/bin/powerline-go -error $status -shell bare -modules "user,ssh,venv,cwd,perms,gitlite" -theme ~/dotfiles/powerline-go-theme.json
+    eval ~/apps/powerline-go -error $status -shell bare -modules "user,ssh,venv,cwd,perms,gitlite" -theme ~/dotfiles/powerline-go-theme.json
 end
 
 # No welcome message
@@ -20,10 +20,10 @@ function csview
 end
 
 # Add to path
-set PATH /usr/local/go/bin $PATH
-set PATH /home/jan/go/bin $PATH
-set PATH /home/jan/.cargo/bin $PATH
-set PATH /home/jan/.local/bin $PATH
+#set PATH /usr/local/go/bin $PATH
+#set PATH /home/jan/go/bin $PATH
+#set PATH /home/jan/.cargo/bin $PATH
+#set PATH /home/jan/.local/bin $PATH
 
 # Disable virtual env custom prompt
 export VIRTUAL_ENV_DISABLE_PROMPT=true

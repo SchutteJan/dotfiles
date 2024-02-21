@@ -21,9 +21,9 @@ function csview
 end
 
 # Add to path
-#set PATH /usr/local/go/bin $PATH
-#set PATH /home/jan/go/bin $PATH
-#set PATH /home/jan/.cargo/bin $PATH
+set PATH /usr/local/go/bin $PATH
+set PATH /home/jan/go/bin $PATH
+set PATH /home/jan/.cargo/bin $PATH
 #set PATH /home/jan/.local/bin $PATH
 
 # Disable virtual env custom prompt

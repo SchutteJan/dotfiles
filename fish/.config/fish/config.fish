@@ -1,6 +1,6 @@
 # Powerline
 function fish_prompt
-    eval ~/apps/powerline-go -error $status -shell bare -modules "user,ssh,venv,cwd,perms,gitlite" -theme ~/dotfiles/powerline-go-theme.json
+    eval ~/go/bin/powerline-go -error $status -shell bare -modules "user,ssh,venv,cwd,perms,gitlite" -theme ~/dotfiles/powerline-go-theme.json
 end
 
 # No welcome message
@@ -13,6 +13,7 @@ export BAT_PAGER="cat"
 alias ls "lsd"
 alias ll "lsd -la"
 alias gs "git status"
+alias gap "git add -p"
 
 # View csv files
 function csview
